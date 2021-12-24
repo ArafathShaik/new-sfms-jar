@@ -40,7 +40,7 @@ public class VerifyLoginTestRobot {
 		// DesiredCapabilities cap = DesiredCapabilities.firefox();
 		// cap.setPlatform(Platform.LINUX);
 		// cap.merge(option.toCapabilities());
-		WebDriverManager.firefoxdriver().setup();
+		//WebDriverManager.firefoxdriver().setup();
 //		driver = new ChromeDriver();
 		driver = new FirefoxDriver();
 		// driver = new ChromeDriver(chromeOptions);
