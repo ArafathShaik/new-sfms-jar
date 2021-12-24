@@ -39,7 +39,7 @@ public class ERRequestCreationAndVerificationTestRobot2 {
 	public void LaunchingApplication() throws IOException, AWTException, InterruptedException {
 		
 
-		driver = new FirefoxDriver();
+		//driver = new FirefoxDriver();
 		  
 		PropertiesUtility.loadApplicationProperties();
 //		System.setProperty("webdriver.gecko.driver",ClassLoader.getSystemResourceAsStream("/src/test/resources/application.properties"));
@@ -49,7 +49,7 @@ public class ERRequestCreationAndVerificationTestRobot2 {
 		// DesiredCapabilities cap = DesiredCapabilities.firefox();
 		// cap.setPlatform(Platform.LINUX);
 		// cap.merge(option.toCapabilities());
-		WebDriverManager.firefoxdriver().setup();
+		//WebDriverManager.firefoxdriver().setup();
 //		driver = new ChromeDriver();
 		driver = new FirefoxDriver();
 		// driver = new ChromeDriver(chromeOptions);
