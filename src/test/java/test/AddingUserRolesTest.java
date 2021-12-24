@@ -17,7 +17,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.wtt.docker.listener.PropertiesUtility;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 
 public class AddingUserRolesTest {
