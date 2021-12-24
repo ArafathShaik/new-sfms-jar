@@ -34,12 +34,12 @@ public class AddingUserRolesTest {
 			PropertiesUtility.loadApplicationProperties();
 //			System.setProperty("webdriver.gecko.driver",ClassLoader.getSystemResourceAsStream("/src/test/resources/application.properties"));
 	//		System.setProperty("webdriver.gecko.driver","/src/test/resources/geckodriver.exe");
-			Robot robot = new Robot();
+			robot = new Robot();
 			// option.addArguments("-headless","window-size=1920x1080");
 			// DesiredCapabilities cap = DesiredCapabilities.firefox();
 			// cap.setPlatform(Platform.LINUX);
 			// cap.merge(option.toCapabilities());
-			WebDriverManager.firefoxdriver().setup();
+			//WebDriverManager.firefoxdriver().setup();
 //			driver = new ChromeDriver();
 			driver = new FirefoxDriver();
 			// driver = new ChromeDriver(chromeOptions);
