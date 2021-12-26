@@ -200,7 +200,7 @@ public class VerifyLoginTestRobot {
 		
 		//s.click(System.getProperty("user.dir")+"//Images//EnterUserIdfield.png");
 		
-		driver.findElement(By.id("uaiUserId")).sendKeys("QAUSER1");
+		driver.findElement(By.id("uaiUserId")).sendKeys("SUSER1");
 		//s.type("SUSER1");
 		
 		Thread.sleep(2000);
@@ -253,7 +253,7 @@ public class VerifyLoginTestRobot {
 	public void loginwithDifferentIFSC() throws MalformedURLException, AWTException, InterruptedException
 	{
 		
-		driver.findElement(By.id("uaiUserId")).sendKeys("QAUSER2");
+		driver.findElement(By.id("uaiUserId")).sendKeys("SUSER2");
 		
 		driver.findElement(By.id("uaiUserNodeAddrs")).sendKeys("IFAR0000001");
 		
@@ -262,43 +262,88 @@ public class VerifyLoginTestRobot {
 				
 		Thread.sleep(10000);
 		  
-		  robot.keyPress(KeyEvent.VK_1);
-        robot.keyRelease(KeyEvent.VK_1);
-        Thread.sleep(1000);
-        
-        robot.keyPress(KeyEvent.VK_1);
-        robot.keyRelease(KeyEvent.VK_1);
-        Thread.sleep(1000);
-        
-        robot.keyPress(KeyEvent.VK_1);
-        robot.keyRelease(KeyEvent.VK_1);
-        Thread.sleep(1000);
-        
-        robot.keyPress(KeyEvent.VK_1);
-        robot.keyRelease(KeyEvent.VK_1);
-        Thread.sleep(1000);
-        
-        robot.keyPress(KeyEvent.VK_1);
-        robot.keyRelease(KeyEvent.VK_1);
-        Thread.sleep(1000);
-        
-        robot.keyPress(KeyEvent.VK_1);
-        robot.keyRelease(KeyEvent.VK_1);
-        Thread.sleep(1000);
-        
-        robot.keyPress(KeyEvent.VK_TAB);
-        robot.keyRelease(KeyEvent.VK_TAB);
-        Thread.sleep(2000);
-			 
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
-        Thread.sleep(6000);
-        
-        robot.keyPress(KeyEvent.VK_ALT);
-        robot.keyPress(KeyEvent.VK_O);
-        
-        robot.keyRelease(KeyEvent.VK_ALT);
-        robot.keyRelease(KeyEvent.VK_O);
+		robot.keyPress(KeyEvent.VK_SHIFT); 
+		  robot.keyPress(KeyEvent.VK_TAB);
+		  robot.keyRelease(KeyEvent.VK_TAB); 
+		  robot.keyRelease(KeyEvent.VK_SHIFT);
+		  robot.delay(20);
+		  robot.keyPress(KeyEvent.VK_SHIFT); 
+		  robot.keyPress(KeyEvent.VK_TAB);
+		  robot.keyRelease(KeyEvent.VK_TAB); 
+		  robot.keyRelease(KeyEvent.VK_SHIFT);
+		  robot.delay(20);
+		  robot.keyPress(KeyEvent.VK_SHIFT); 
+		  robot.keyPress(KeyEvent.VK_TAB);
+		  robot.keyRelease(KeyEvent.VK_TAB);
+		  robot.keyRelease(KeyEvent.VK_SHIFT);
+		  robot.delay(20);
+		  robot.keyPress(KeyEvent.VK_SHIFT); 
+		  robot.keyPress(KeyEvent.VK_TAB);
+		  robot.keyRelease(KeyEvent.VK_TAB); 
+		  robot.keyRelease(KeyEvent.VK_SHIFT);
+		  robot.delay(20);
+		  robot.keyPress(KeyEvent.VK_SHIFT); 
+		  robot.keyPress(KeyEvent.VK_TAB);
+		  robot.keyRelease(KeyEvent.VK_TAB); 
+		  robot.keyRelease(KeyEvent.VK_SHIFT);
+		  robot.delay(20);
+		  
+		  String pfxpath=System.getProperty("user.dir") + "/" + ("src/test/resources/RBIH0000000.pfx");
+		  System.out.println(pfxpath);
+		  RobotClassDynamicPath rcdp=new RobotClassDynamicPath();
+		
+		  rcdp.type(pfxpath);
+		  	 
+		  
+		  
+		  
+		Thread.sleep(15000);
+		
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
+		
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
+		
+		
+		robot.keyPress(KeyEvent.VK_P);
+		robot.keyRelease(KeyEvent.VK_P);
+		
+		robot.keyPress(KeyEvent.VK_F);
+		robot.keyRelease(KeyEvent.VK_F);
+		
+		robot.keyPress(KeyEvent.VK_X);
+		robot.keyRelease(KeyEvent.VK_X);
+		
+		robot.keyPress(KeyEvent.VK_F);
+		robot.keyRelease(KeyEvent.VK_F);
+		
+		robot.keyPress(KeyEvent.VK_I);
+		robot.keyRelease(KeyEvent.VK_I);
+		
+		robot.keyPress(KeyEvent.VK_L);
+		robot.keyRelease(KeyEvent.VK_L);
+		
+		robot.keyPress(KeyEvent.VK_E);
+		robot.keyRelease(KeyEvent.VK_E);
+		
+		robot.keyPress(KeyEvent.VK_1);
+		robot.keyRelease(KeyEvent.VK_1);
+		
+		robot.keyPress(KeyEvent.VK_2);
+		robot.keyRelease(KeyEvent.VK_2);
+		
+		robot.keyPress(KeyEvent.VK_3);
+		robot.keyRelease(KeyEvent.VK_3);
+		
+		Thread.sleep(3000);
+		
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
+		Thread.sleep(3000);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		  
 		  
 		//s.click(System.getProperty("user.dir")+"//Images//Browsepfx.png");
 		//s.click(System.getProperty("user.dir")+"//Images//pfxfile.png");
@@ -347,7 +392,7 @@ public class VerifyLoginTestRobot {
 
 			
 					
-			driver.findElement(By.id("uaiUserId")).sendKeys("QAUSER1");
+			driver.findElement(By.id("uaiUserId")).sendKeys("SUSER1");
 			 
 			driver.findElement(By.id("uaiUserNodeAddrs")).sendKeys("IFDK00000SC");
 
@@ -356,43 +401,92 @@ public class VerifyLoginTestRobot {
 			System.out.println("Clicked on Sign-in Button successfully");
 
 			Thread.sleep(12000);
-			 robot.keyPress(KeyEvent.VK_1);
-		        robot.keyRelease(KeyEvent.VK_1);
-		        Thread.sleep(1000);
-		        
-		        robot.keyPress(KeyEvent.VK_1);
-		        robot.keyRelease(KeyEvent.VK_1);
-		        Thread.sleep(1000);
-		        
-		        robot.keyPress(KeyEvent.VK_1);
-		        robot.keyRelease(KeyEvent.VK_1);
-		        Thread.sleep(1000);
-		        
-		        robot.keyPress(KeyEvent.VK_1);
-		        robot.keyRelease(KeyEvent.VK_1);
-		        Thread.sleep(1000);
-		        
-		        robot.keyPress(KeyEvent.VK_1);
-		        robot.keyRelease(KeyEvent.VK_1);
-		        Thread.sleep(1000);
-		        
-		        robot.keyPress(KeyEvent.VK_1);
-		        robot.keyRelease(KeyEvent.VK_1);
-		        Thread.sleep(1000);
-		        
-		        robot.keyPress(KeyEvent.VK_TAB);
-		        robot.keyRelease(KeyEvent.VK_TAB);
-		        Thread.sleep(2000);
-					 
-		        robot.keyPress(KeyEvent.VK_ENTER);
-		        robot.keyRelease(KeyEvent.VK_ENTER);
-		        Thread.sleep(8000);
-		        
-		        robot.keyPress(KeyEvent.VK_ALT);
-		        robot.keyPress(KeyEvent.VK_O);
-		        
-		        robot.keyRelease(KeyEvent.VK_ALT);
-		        robot.keyRelease(KeyEvent.VK_O);
+			robot.keyPress(KeyEvent.VK_SHIFT); 
+			  robot.keyPress(KeyEvent.VK_TAB);
+			  robot.keyRelease(KeyEvent.VK_TAB); 
+			  robot.keyRelease(KeyEvent.VK_SHIFT);
+			  robot.delay(20);
+			  robot.keyPress(KeyEvent.VK_SHIFT); 
+			  robot.keyPress(KeyEvent.VK_TAB);
+			  robot.keyRelease(KeyEvent.VK_TAB); 
+			  robot.keyRelease(KeyEvent.VK_SHIFT);
+			  robot.delay(20);
+			  robot.keyPress(KeyEvent.VK_SHIFT); 
+			  robot.keyPress(KeyEvent.VK_TAB);
+			  robot.keyRelease(KeyEvent.VK_TAB);
+			  robot.keyRelease(KeyEvent.VK_SHIFT);
+			  robot.delay(20);
+			  robot.keyPress(KeyEvent.VK_SHIFT); 
+			  robot.keyPress(KeyEvent.VK_TAB);
+			  robot.keyRelease(KeyEvent.VK_TAB); 
+			  robot.keyRelease(KeyEvent.VK_SHIFT);
+			  robot.delay(20);
+			  robot.keyPress(KeyEvent.VK_SHIFT); 
+			  robot.keyPress(KeyEvent.VK_TAB);
+			  robot.keyRelease(KeyEvent.VK_TAB); 
+			  robot.keyRelease(KeyEvent.VK_SHIFT);
+			  robot.delay(20);
+			  
+			  String pfxpath=System.getProperty("user.dir") + "/" + ("src/test/resources/RBIH0000000.pfx");
+			  System.out.println(pfxpath);
+			  RobotClassDynamicPath rcdp=new RobotClassDynamicPath();
+			
+			  rcdp.type(pfxpath);
+			  	 
+			  
+			  
+			  
+			Thread.sleep(15000);
+			
+			robot.keyPress(KeyEvent.VK_TAB);
+			robot.keyRelease(KeyEvent.VK_TAB);
+			
+			robot.keyPress(KeyEvent.VK_TAB);
+			robot.keyRelease(KeyEvent.VK_TAB);
+			
+			
+			robot.keyPress(KeyEvent.VK_P);
+			robot.keyRelease(KeyEvent.VK_P);
+			
+			robot.keyPress(KeyEvent.VK_F);
+			robot.keyRelease(KeyEvent.VK_F);
+			
+			robot.keyPress(KeyEvent.VK_X);
+			robot.keyRelease(KeyEvent.VK_X);
+			
+			robot.keyPress(KeyEvent.VK_F);
+			robot.keyRelease(KeyEvent.VK_F);
+			
+			robot.keyPress(KeyEvent.VK_I);
+			robot.keyRelease(KeyEvent.VK_I);
+			
+			robot.keyPress(KeyEvent.VK_L);
+			robot.keyRelease(KeyEvent.VK_L);
+			
+			robot.keyPress(KeyEvent.VK_E);
+			robot.keyRelease(KeyEvent.VK_E);
+			
+			robot.keyPress(KeyEvent.VK_1);
+			robot.keyRelease(KeyEvent.VK_1);
+			
+			robot.keyPress(KeyEvent.VK_2);
+			robot.keyRelease(KeyEvent.VK_2);
+			
+			robot.keyPress(KeyEvent.VK_3);
+			robot.keyRelease(KeyEvent.VK_3);
+			
+			Thread.sleep(3000);
+			
+			robot.keyPress(KeyEvent.VK_TAB);
+			robot.keyRelease(KeyEvent.VK_TAB);
+			Thread.sleep(3000);
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			  
+			  //pfx upload action ends
+		
+			  
+			 Thread.sleep(10000);
 			
 			
 	}
@@ -405,4 +499,3 @@ public class VerifyLoginTestRobot {
 		}
 
 	}
-

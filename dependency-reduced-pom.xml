@@ -11,6 +11,10 @@
         <targetPath>src/test/resources</targetPath>
         <directory>src/test/resources</directory>
       </resource>
+      <resource>
+        <targetPath>pfxf</targetPath>
+        <directory>pfxf</directory>
+      </resource>
     </resources>
     <plugins>
       <plugin>

@@ -24,12 +24,12 @@ public class ResultSender {
 			factory.setHttpClientConfig(
 					new HttpClientConfig.Builder(ELASTICSEARCH_URL).readTimeout(10000).multiThreaded(true).build());
 			jestClient = factory.getObject();
-			Index index = new Index.Builder(testStatus).index(PropertiesUtility.properties.getProperty("es.index")).id(testStatus.getTestPlanId())
+			
+			Index index = new Index.Builder(testStatus).index(PropertiesUtility.properties.getProperty("es.index"))
 					.type(PropertiesUtility.properties.getProperty("es.index")).build();
 			JestResult result = jestClient.execute(index);
 			System.out.println(result.getErrorMessage());
-			System.out.println(result);
-
+ 
 		} catch (Exception e) {
 
 			e.printStackTrace();

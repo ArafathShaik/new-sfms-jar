@@ -201,54 +201,93 @@ public class ERRequestCreationAndVerificationTestRobot2 {
 			  
 			  Thread.sleep(10000);
 			  
-			  robot.keyPress(KeyEvent.VK_1);
-	          robot.keyRelease(KeyEvent.VK_1);
-	          Thread.sleep(1000);
-	          
-	          robot.keyPress(KeyEvent.VK_1);
-	          robot.keyRelease(KeyEvent.VK_1);
-	          Thread.sleep(1000);
-	          
-	          robot.keyPress(KeyEvent.VK_1);
-	          robot.keyRelease(KeyEvent.VK_1);
-	          Thread.sleep(1000);
-	          
-	          robot.keyPress(KeyEvent.VK_1);
-	          robot.keyRelease(KeyEvent.VK_1);
-	          Thread.sleep(1000);
-	          
-	          robot.keyPress(KeyEvent.VK_1);
-	          robot.keyRelease(KeyEvent.VK_1);
-	          Thread.sleep(1000);
-	          
-	          robot.keyPress(KeyEvent.VK_1);
-	          robot.keyRelease(KeyEvent.VK_1);
-	          Thread.sleep(1000);
-	          
-	          robot.keyPress(KeyEvent.VK_TAB);
-	          robot.keyRelease(KeyEvent.VK_TAB);
-	          Thread.sleep(2000);
-				 
-	          robot.keyPress(KeyEvent.VK_ENTER);
-	          robot.keyRelease(KeyEvent.VK_ENTER);
-	          Thread.sleep(6000);
-	          
-	          robot.keyPress(KeyEvent.VK_ALT);
-	          robot.keyPress(KeyEvent.VK_O);
-	          
-	          robot.keyRelease(KeyEvent.VK_ALT);
-	          robot.keyRelease(KeyEvent.VK_O);
+			  robot.keyPress(KeyEvent.VK_SHIFT); 
+			  robot.keyPress(KeyEvent.VK_TAB);
+			  robot.keyRelease(KeyEvent.VK_TAB); 
+			  robot.keyRelease(KeyEvent.VK_SHIFT);
+			  robot.delay(20);
+			  robot.keyPress(KeyEvent.VK_SHIFT); 
+			  robot.keyPress(KeyEvent.VK_TAB);
+			  robot.keyRelease(KeyEvent.VK_TAB); 
+			  robot.keyRelease(KeyEvent.VK_SHIFT);
+			  robot.delay(20);
+			  robot.keyPress(KeyEvent.VK_SHIFT); 
+			  robot.keyPress(KeyEvent.VK_TAB);
+			  robot.keyRelease(KeyEvent.VK_TAB);
+			  robot.keyRelease(KeyEvent.VK_SHIFT);
+			  robot.delay(20);
+			  robot.keyPress(KeyEvent.VK_SHIFT); 
+			  robot.keyPress(KeyEvent.VK_TAB);
+			  robot.keyRelease(KeyEvent.VK_TAB); 
+			  robot.keyRelease(KeyEvent.VK_SHIFT);
+			  robot.delay(20);
+			  robot.keyPress(KeyEvent.VK_SHIFT); 
+			  robot.keyPress(KeyEvent.VK_TAB);
+			  robot.keyRelease(KeyEvent.VK_TAB); 
+			  robot.keyRelease(KeyEvent.VK_SHIFT);
+			  robot.delay(20);
 			  
-			//s.click(System.getProperty("user.dir")+"//Images//Browsepfx.png");
-			//s.click(System.getProperty("user.dir")+"//Images//pfxfile.png");
-			//s.click(System.getProperty("user.dir")+"//Images//pfxfileopen.png");
-			//s.click(System.getProperty("user.dir")+"//Images//pfxpasswordfield.png");
-		
-			 			
-			 Thread.sleep(5000);
+			  String pfxpath=System.getProperty("user.dir") + "/" + ("src/test/resources/RBIH0000000.pfx");
+			  System.out.println(pfxpath);
+			  RobotClassDynamicPath rcdp=new RobotClassDynamicPath();
 			
-			             
-       // System.out.println(driver.getWindowHandle()+" parent window");
+			  rcdp.type(pfxpath);
+			  	 
+			  
+			  
+			  
+			Thread.sleep(15000);
+			
+			robot.keyPress(KeyEvent.VK_TAB);
+			robot.keyRelease(KeyEvent.VK_TAB);
+			
+			robot.keyPress(KeyEvent.VK_TAB);
+			robot.keyRelease(KeyEvent.VK_TAB);
+			
+			
+			robot.keyPress(KeyEvent.VK_P);
+			robot.keyRelease(KeyEvent.VK_P);
+			
+			robot.keyPress(KeyEvent.VK_F);
+			robot.keyRelease(KeyEvent.VK_F);
+			
+			robot.keyPress(KeyEvent.VK_X);
+			robot.keyRelease(KeyEvent.VK_X);
+			
+			robot.keyPress(KeyEvent.VK_F);
+			robot.keyRelease(KeyEvent.VK_F);
+			
+			robot.keyPress(KeyEvent.VK_I);
+			robot.keyRelease(KeyEvent.VK_I);
+			
+			robot.keyPress(KeyEvent.VK_L);
+			robot.keyRelease(KeyEvent.VK_L);
+			
+			robot.keyPress(KeyEvent.VK_E);
+			robot.keyRelease(KeyEvent.VK_E);
+			
+			robot.keyPress(KeyEvent.VK_1);
+			robot.keyRelease(KeyEvent.VK_1);
+			
+			robot.keyPress(KeyEvent.VK_2);
+			robot.keyRelease(KeyEvent.VK_2);
+			
+			robot.keyPress(KeyEvent.VK_3);
+			robot.keyRelease(KeyEvent.VK_3);
+			
+			Thread.sleep(3000);
+			
+			robot.keyPress(KeyEvent.VK_TAB);
+			robot.keyRelease(KeyEvent.VK_TAB);
+			Thread.sleep(3000);
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			  
+			  //pfx upload action ends
+		
+			  
+			 Thread.sleep(10000);
+			 
 			 actions=new Actions(driver);
 			  Thread.sleep(8000); 
 			
@@ -427,3 +466,4 @@ public class ERRequestCreationAndVerificationTestRobot2 {
 		driver.quit();
 	}
 }
+
