@@ -1,4 +1,4 @@
-FROM sandeepalguri/java-ubuntu-ff41
+FROM sandeepalguri/java1.8.60-ubuntu-ff41
 #RUN apt-get update \
  # && apt-get install sudo -y \
 # &&  sudo apt install xvfb  -y \
